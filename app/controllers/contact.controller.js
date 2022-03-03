@@ -22,6 +22,6 @@ exports.deleteAll = async (req, res) => {
     res.send({message: "deleteAll handler"});
 };
 
-exports.dfindAllFavorite = async (req, res) => {
+exports.findAllFavorite = async (req, res) => {
     res.send({message: "findAllFavorite handler"});
 };
