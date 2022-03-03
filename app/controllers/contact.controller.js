@@ -60,7 +60,7 @@ const Contact = require('../models/contact.model')
 
 
     exports.update = async (req,res,next) => {
-        if(Object.keys(res.body).length === 0){
+        if(object.keys(res.body).length === 0){
             return next(new BadRequestError(400,
                 "Data to update can to be empty"))
         }
