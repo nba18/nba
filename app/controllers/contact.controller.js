@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 const { BadRequestError } = require("../errors")
-const handlePromise = require('../helpers/promise.helper')
+const handlePromise = require('../helpers/promise.helpers')
 const Contact = require('../models/contact.model')
 
     exports.create = async (req,res,next) => {
@@ -139,4 +139,3 @@ const Contact = require('../models/contact.model')
     }    
 
 
-module.exports = new ContactBook
