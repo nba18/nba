@@ -57,14 +57,12 @@ const Contact = require('../models/contact.model')
         return res.send(document)
     }
 
-
-
     exports.update = async (req,res,next) => {
-        if(object.keys(res.body).length === 0){
+        if (object.keys(req.body).length === 0) {
             return next(new BadRequestError(400,
                 "Data to update can to be empty"))
         }
-        const { id } = req.params
+        const { id } = req.params;
         const condition = {
             _id: id && mongoose.isValidObjectId(id) ? id : null,
         }
